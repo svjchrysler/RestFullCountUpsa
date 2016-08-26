@@ -33,6 +33,7 @@ class PersonController extends Controller
 		$person->ambulanten = $req->ambulanten;
 		$person->indigenah = $req->indigenah;
 		$person->indigenam = $req->indigenam;
+		$person->comentario = $req->comentario;
 		$person->imageMapeo = $req->imageMapeo;
 		$person->imageAcera = $req->imageAcera;
 		$person->save();

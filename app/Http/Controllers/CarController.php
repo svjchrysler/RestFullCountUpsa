@@ -40,6 +40,7 @@ class CarController extends Controller
 		$car->indigenam = $req->indigenam;
 		$car->imageMapeo = $req->imageMapeo;
 		$car->imageAcera = $req->imageAcera;
+		$car->comentario = $req->comentario;
 		$car->save();
 		return "1";
 	}

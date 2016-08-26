@@ -31,6 +31,7 @@ class CreateCategoryPeopleTable extends Migration
             $table->string('indigenam')->nullable();
             $table->text('imageMapeo')->nullable();
             $table->text('imageAcera')->nullable();
+            $table->string('comentario')->nullable();
             $table->timestamps();
         });
     }
