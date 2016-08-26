@@ -29,7 +29,15 @@ class CreateCategoryCarsTable extends Migration
             $table->string('hora_inicio');
             $table->string('hora_fin');
             $table->string('fecha');
-            $table->string('nota');
+            $table->string('nota')->nullable();
+            $table->string('fijoc')->nullable();
+            $table->string('fijon')->nullable();
+            $table->string('ambulantec')->nullable();
+            $table->string('ambulanten')->nullable();
+            $table->string('indigenah')->nullable();
+            $table->string('indigenam')->nullable();
+            $table->text('imageMapeo')->nullable();
+            $table->text('imageAcera')->nullable();
             $table->timestamps();
         });
     }

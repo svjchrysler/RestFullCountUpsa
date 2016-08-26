@@ -32,6 +32,14 @@ class CarController extends Controller
 		$car->hora_fin = $req->fin;
 		$car->fecha = $req->fecha;
 		$car->nota = $req->nota;
+		$car->fijoc = $req->fijoc;
+		$car->fijon = $req->fijon;
+		$car->ambulantec = $req->ambulantec;
+		$car->ambulanten = $req->ambulanten;
+		$car->indigenah = $req->indigenah;
+		$car->indigenam = $req->indigenam;
+		$car->imageMapeo = $req->imageMapeo;
+		$car->imageAcera = $req->imageAcera;
 		$car->save();
 		return "1";
 	}
