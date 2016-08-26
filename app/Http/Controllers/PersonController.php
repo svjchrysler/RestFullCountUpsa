@@ -27,14 +27,14 @@ class PersonController extends Controller
 		$person->hora_fin = $req->fin;
 		$person->fecha = $req->fecha;
 		$person->nota = $req->nota;
-		$car->fijoc = $req->fijoc;
-		$car->fijon = $req->fijon;
-		$car->ambulantec = $req->ambulantec;
-		$car->ambulanten = $req->ambulanten;
-		$car->indigenah = $req->indigenah;
-		$car->indigenam = $req->indigenam;
-		$car->imageMapeo = $req->imageMapeo;
-		$car->imageAcera = $req->imageAcera;
+		$person->fijoc = $req->fijoc;
+		$person->fijon = $req->fijon;
+		$person->ambulantec = $req->ambulantec;
+		$person->ambulanten = $req->ambulanten;
+		$person->indigenah = $req->indigenah;
+		$person->indigenam = $req->indigenam;
+		$person->imageMapeo = $req->imageMapeo;
+		$person->imageAcera = $req->imageAcera;
 		$person->save();
 		return "1";
 	}
