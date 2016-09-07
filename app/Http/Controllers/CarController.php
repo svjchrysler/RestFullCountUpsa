@@ -41,8 +41,10 @@ class CarController extends Controller
 		$car->imageMapeo = $req->imageMapeo;
 		$car->imageAcera = $req->imageAcera;
 		$car->comentario = $req->comentario;
-		$car->save();
-		return "1";
+		if($car->save())
+			return "1";
+		else
+			return "0";
 	}
 
 	public function datos() {

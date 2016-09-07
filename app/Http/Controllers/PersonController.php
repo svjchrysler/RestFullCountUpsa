@@ -36,7 +36,9 @@ class PersonController extends Controller
 		$person->comentario = $req->comentario;
 		$person->imageMapeo = $req->imageMapeo;
 		$person->imageAcera = $req->imageAcera;
-		$person->save();
-		return "1";
+		if($person->save())
+			return "1";
+		else
+			return "2";
 	}
 }
